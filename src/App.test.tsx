@@ -1,5 +1,6 @@
-/* eslint-env jest */
 import React from 'react';
+import '@testing-library/jest-dom';
+
 import { render, screen } from '@testing-library/react';
 import App from './App';
 describe('tests the app root component', function () {
@@ -8,6 +9,3 @@ describe('tests the app root component', function () {
         expect(screen.getByText(/awesome/)).ToBeInTheDocument();
     });
 });
-function expect(arg0: any) {
-    throw new Error('Function not implemented.');
-}
