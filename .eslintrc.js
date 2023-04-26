@@ -23,16 +23,13 @@ module.exports = {
         'plugin:prettier/recommended', //should be at the last
     ],
     rules: {
+        
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': ['error'],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
-        'prettier/prettier': [
-            
-            {
-              'endOfLine': 'auto',
-            }
-          ]
-        
+        'prettier/prettier':0
+          
+          
     },
 };
