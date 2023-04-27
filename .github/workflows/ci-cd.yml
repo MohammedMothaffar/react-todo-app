@@ -25,7 +25,7 @@ npm run tsc:check
 - name: Tests
 run: npm run test
 - name: Deploy to Netlify 
-      uses: netlify/actions/cli@master
+      uses: netlify/actions/cli@main
       with:
         args: deploy --dir=dist 
       env:
