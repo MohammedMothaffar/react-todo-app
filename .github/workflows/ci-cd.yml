@@ -8,12 +8,13 @@ deploy:
 runs-on: ubuntu-latest
   steps:
 - name: Checkout respository 
-  uses: actions/checkout@v2
+  uses: actions/checkout@main
   - name: Use Node.js
-uses: actions/setup-node@v2
+uses: actions/setup-node@main
 with: 
-node-version: '14'
-cashe: npm
+node-version: '18'
+    check-latest: true
+
 - name: Install dependencies 
 run: npm ci
 - name: Formatting and Linting 
