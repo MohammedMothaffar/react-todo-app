@@ -9,10 +9,10 @@ runs-on: ubuntu-latest
 steps:
 - name: Checkout respository 
   uses: actions/checkout@v3
-- name: Setup node
+      - name: Use Node.js 16.x
 uses: actions/setup-node@v3
 with: 
-node-version: '18.16.0'
+          node-version: 16.x
 - name: Install dependencies 
 run: npm ci
 - name: Formatting and Linting 
