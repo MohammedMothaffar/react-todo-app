@@ -6,10 +6,10 @@ branches:
 jobs:
 deploy:
 runs-on: ubuntu-latest
-steps:
+  steps:
 - name: Checkout respository 
   uses: actions/checkout@v3
-  - name: Setup node
+  - name: Setup node 19
 uses: actions/setup-node@v3
 with: 
 node-version: '19'
